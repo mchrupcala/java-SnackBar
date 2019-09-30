@@ -39,10 +39,14 @@ public class Snack {
     }
 
     //Add quantity when given how many to add.
-
+    public void addQuantity(int newQuantity) {
+        quantity = this.quantity + newQuantity;
+    }
 
     //Buy snack when given how many to buy.
-
+    public void buySnack(int buyQuantity, double totalCash) {
+        quantity = this.quantity - buyQuantity;
+    }
 
     public void setQuantity(int quantity) {
          quantity = this.quantity + quantity;
@@ -53,6 +57,9 @@ public class Snack {
     }
 
     //get total cost given a quantity.
+    public double getTotalCost(int toBuyQuantity) {
+        return toBuyQuantity * this.cost;
+    }
 
     public void setCost(double cost) {
         this.cost = cost;

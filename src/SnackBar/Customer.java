@@ -16,6 +16,9 @@ class Customer {
 
 
     //Buy given total cash used in purchase.
+    public void buySnack(int buyQuantity, double totalCash) {
+        cash = this.cash - totalCash;
+    }
 
     public String getName() {
         return name;
@@ -29,8 +32,8 @@ class Customer {
         return cash;
     }
 
-    public void addCash(double cash) {
-        cash = this.cash + cash; 
+    public void addCash(double newCash) {
+        cash = this.cash + newCash; 
     }
 
 
