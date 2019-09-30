@@ -66,4 +66,14 @@ public class Snack {
         this.vending_machine_id = vending_machine_id;
     }
 
+    @Override
+    public String toString() {
+        String rtnStr = "id: " + id + "\n" +
+        "Name: " + name + "\n" +
+        "quantity: " + quantity + "\n" +
+        "cost: " + cost + "\n" +
+        "vending ID: " + vending_machine_id;
+        return rtnStr;
+    }
+
 }
